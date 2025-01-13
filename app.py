@@ -91,7 +91,7 @@ from pydantic import SecretStr
 
 llm = ChatGoogleGenerativeAI(
     model="gemini-2.0-flash-exp",
-    api_key=SecretStr("AIzaSyAtqtJEbl7Ln19dBe6jG21cnFXpJnEoyuE"),
+    api_key=SecretStr("Google_API_KEY"),
 )
 agent = initialize_agent(
     tools, llm, agent=AgentType.STRUCTURED_CHAT_ZERO_SHOT_REACT_DESCRIPTION
